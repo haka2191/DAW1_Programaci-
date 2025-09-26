@@ -28,6 +28,6 @@ public class Ex9 {
         segundo = scanner.nextInt();
         System.out.print("Dime el tiempo en segundos a sumar: ");
         tiempo = scanner.nextInt();
-        segundo += tiempo;
+       
     }
 }
