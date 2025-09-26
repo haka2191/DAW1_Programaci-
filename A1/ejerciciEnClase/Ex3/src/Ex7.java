@@ -12,13 +12,13 @@ public class Ex7 {
 -imp num3
  */
         Scanner scanner = new Scanner(System.in);
-        double valor1, valor2, valor3;
+        int valor1, valor2, valor3;
         System.out.print("Dime un valor 1: ");
-        valor1 = scanner.nextDouble();
+        valor1 = scanner.nextInt();
         System.out.print("Dime un valor 2: ");
-        valor2 = scanner.nextDouble();
+        valor2 = scanner.nextInt();
         System.out.print("Dime un valor 3: ");
-        valor3 = scanner.nextDouble();
+        valor3 = scanner.nextInt();
         if (valor1 >= valor2 && valor1 >= valor3) {
             System.out.println(valor1);}
         else if (valor2 >= valor1 && valor2 >= valor3) {
