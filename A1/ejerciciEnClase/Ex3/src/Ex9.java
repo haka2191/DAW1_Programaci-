@@ -6,7 +6,7 @@ public class Ex9 {
     minuts i segons i un temps expressat en segons i que ens calcula 
     i escriu l'hora, minuts i segons que seran, transcorregut el temps especificat.
     //Pedir hora, minut, segons
-    //sumar 1 al segundo
+    //sumar 1 al segundo/ segundo = segundo +1
     //Si segundo >=60
     - sumar 1 al minuto
     -iniciar a 0 segundo
@@ -26,8 +26,18 @@ public class Ex9 {
         minuto = scanner.nextInt();
         System.out.print("Dime los segundos: ");
         segundo = scanner.nextInt();
-        System.out.print("Dime el tiempo en segundos a sumar: ");
-        tiempo = scanner.nextInt();
-       
+        segundo = segundo + 1;
+        if (segundo >= 60) {
+            minuto = minuto + 1;
+            segundo = 0;
+            if (minuto >= 60) {
+                hora = hora + 1;
+                minuto = 0;
+                if (hora >= 24) {
+                    hora = 0;
+                }
+            }
+        }
+        System.out.println("La hora es: " + hora + ":" + minuto + ":" + segundo);       
     }
 }
