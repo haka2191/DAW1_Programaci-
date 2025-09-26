@@ -19,7 +19,7 @@ public class Ex9 {
     //Mostrar hora, minuto, Segundo
     */
         Scanner scanner = new Scanner(System.in);
-        int hora, minuto, segundo, tiempo;
+        int hora, minuto, segundo;
         System.out.print("Dime la hora: "); 
         hora = scanner.nextInt();
         System.out.print("Dime los minutos: ");
@@ -27,6 +27,7 @@ public class Ex9 {
         System.out.print("Dime los segundos: ");
         segundo = scanner.nextInt();
         segundo = segundo + 1;
+        
         if (segundo >= 60) {
             minuto = minuto + 1;
             segundo = 0;
@@ -37,7 +38,7 @@ public class Ex9 {
                     hora = 0;
                 }
             }
-        }
-        System.out.println("La hora es: " + hora + ":" + minuto + ":" + segundo);       
-    }
+        } 
+        System.out.println("La hora es: " + hora + ":" + minuto + ":" + segundo);   
+}
 }
