@@ -19,11 +19,11 @@ public class Ex5 {
     System.out.print("Dime un valor 2: ");
     valor2 = scanner.nextDouble();
     if (valor1 > valor2) {
-        System.out.println("El valor 1 es mayor que el valor 2");
+        System.out.println(valor2 + " - " + valor1);
     } else if (valor2 > valor1) {
-        System.out.println("El valor 1 es menor que el valor 2");
+        System.out.println(valor1 + " - " + valor2);
     } else {
-        System.out.println("Los dos valores son iguales");
+        System.out.println(valor1);
     }
 }
 }
