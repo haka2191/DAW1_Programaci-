@@ -21,7 +21,7 @@ public class ex13 {
 
         final double DOLAR_EURO = 1.17; //1 Euro = 1.17 Dólar (USD)
         final double INDIAN_EURO = 104.31; //1 Euro = 104.31 Indian rupee (INR)
-        final double POUND_EURO = 0.86; //1 Euro = 0.86 Pound (GBP)
+        final double POUND_EURO = 0.87; //1 Euro = 0.86 Pound (GBP)
 
         //Menu de monedas
         System.out.println("Tria una moneda per convertir:");
