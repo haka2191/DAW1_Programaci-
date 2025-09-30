@@ -6,14 +6,14 @@ public class ex12 {
 
         // Demanar el color del semàfor
         System.out.print("De quin color està el semàfor? (V=Verd / T=Taronja / R=Roig): ");
-        String resposta = sc.nextLine().toUpperCase();
+        char resposta = sc.nextLine().charAt(0);
 
         // Decidir acció segons la resposta
-        if (resposta.equals("V")) {
+        if (resposta == 'V' || resposta == 'v') {
             System.out.println("Pots passar.");
-        } else if (resposta.equals("T")) {
+        } else if (resposta == 'T' || resposta == 't') {
             System.out.println("Millor espera.");
-        } else if (resposta.equals("R")) {
+        } else if (resposta == 'R' || resposta == 'r') {
             System.out.println("Atura't!");
         } else {
             System.out.println("Color no vàlid. Introdueix V, T o R.");
