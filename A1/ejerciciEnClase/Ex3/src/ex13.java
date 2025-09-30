@@ -19,9 +19,9 @@ public class ex13 {
         System.out.print("Introdueix un import en euros: ");
         double euros = sc.nextDouble();
 
-        final double DOLAR_USD = 1.17; //1 Euro = 1.17 Dólar (USD)
-        final double INDIAN_RUPEE = 104.31; //1 Euro = 104.31 Indian rupee (INR)
-        final double POUND_GBP = 0.86; //1 Euro = 0.86 Pound (GBP)
+        final double DOLAR_EURO = 1.17; //1 Euro = 1.17 Dólar (USD)
+        final double INDIAN_EURO = 104.31; //1 Euro = 104.31 Indian rupee (INR)
+        final double POUND_EURO = 0.86; //1 Euro = 0.86 Pound (GBP)
 
         //Menu de monedas
         System.out.println("Tria una moneda per convertir:");
@@ -34,15 +34,15 @@ public class ex13 {
         //Decidir acció segons la resposta utilitzant switch
         switch (opcio){
             case 1:
-                conversio = euros * DOLAR_USD; 
+                conversio = euros * DOLAR_EURO; 
                 System.out.println( euros + " Euros són " + conversio + " Dòlar (USD).");
                 break;
             case 2:
-                conversio = euros * INDIAN_RUPEE; 
+                conversio = euros * INDIAN_EURO; 
                 System.out.println( euros + " Euros són " + conversio + " Indian rupee (INR).");
                 break;
             case 3:
-                conversio = euros * POUND_GBP;
+                conversio = euros * POUND_EURO;
                 System.out.println( euros + " Euros són " + conversio + " Pound (GBP).");
                 break;
             default: //Si no es ninguna de las opciones
