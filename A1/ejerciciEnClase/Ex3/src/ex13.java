@@ -21,7 +21,7 @@ public class ex13 {
         System.out.println("Tria una moneda per convertir:");
         System.out.println("1. Dòlar (USD)");
         System.out.println("2. Indian rupee (INR)");
-        System.out.println("3. Pond (GBP)");
+        System.out.println("3. Pound (GBP)");
         System.out.print("Introdueix el número de la moneda (1-3): ");
         int opcio = sc.nextInt();
         double conversio;
@@ -36,7 +36,7 @@ public class ex13 {
                 break;
             case 3:
                 conversio = euros * 0.86; 
-                System.out.println( euros + " Euros són " + conversio + " Pond (GBP).");
+                System.out.println( euros + " Euros són " + conversio + " Pound (GBP).");
                 break;
             default:
                 System.out.println("Opció no vàlida. Si us plau, tria una opció entre 1 a 3.");
