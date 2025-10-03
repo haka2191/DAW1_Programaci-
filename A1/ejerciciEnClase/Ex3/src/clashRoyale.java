@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.function.ToLongBiFunction;
 
 public class clashRoyale {
     public static void main(String[] args) throws Exception {
@@ -56,7 +57,7 @@ public class clashRoyale {
 
         // Demanar al usuari que esculli una carta
         System.out.println("Escribe la lletra de la carta que quieres:");
-        String eleccion = scanner.next().toLowerCase();
+        String eleccion = scanner.nextLine().toLowerCase();
         
         // Mostrar la carta escollida
         switch (eleccion) {
