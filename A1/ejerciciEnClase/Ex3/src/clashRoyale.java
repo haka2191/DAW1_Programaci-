@@ -57,27 +57,27 @@ public class clashRoyale {
 
         // Demanar al usuari que esculli una carta
         System.out.println("Escribe la lletra de la carta que quieres:");
-        String eleccion = scanner.nextLine().toLowerCase();
+        char eleccion = scanner.nextLine().charAt(0);
         
         // Mostrar la carta escollida
         switch (eleccion) {
-            case "m": // Mago Electrico
+            case 'M': // Mago Electrico
                 System.out.println("Has elegido Mago Electrico");
                 break;
-            case "e": // Esbirro Mega o Ejercito de esqueletos
+            case 'E': // Esbirro Mega o Ejercito de esqueletos
                 if (copes < 2000) {
                     System.out.println("Has elegido Esbirro Mega");
                 } else {
                     System.out.println("Has elegido Ejercito de esqueletos");
                 }
                 break;
-            case "c": // Caballero
+            case 'C': // Caballero
                 System.out.println("Has elegido Caballero");
                 break;
-            case "b":// Bandida
+            case 'B':// Bandida
                 System.out.println("Has elegido Bandida");
                 break;
-            case "g":// Gigante
+            case 'G':// Gigante
                 System.out.println("Has elegido Gigante");
                 break;
             default:// Carta no valida
