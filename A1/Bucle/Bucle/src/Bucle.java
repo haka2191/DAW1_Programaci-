@@ -12,15 +12,19 @@ public class Bucle {
         System.out.println("0.- Salir");
         System.out.println("Que opcion elegir?");
         opcion_menu = sc.nextInt();
-        } while(opcion_menu!=1 && opcion_menu!=2 && opcion_menu!=3);
+        //} while(opcion_menu!=1 && opcion_menu!=2 && opcion_menu!=3);
 
-        if (opcion_menu ==1) {
-            System.out.println("Jugando");
-        }else if (opcion_menu ==2) {
-            System.out.println("Equipo reforzando");
-        }else if (opcion_menu ==3) {
-            System.out.println("Conectando online...");
-        }
+            if (opcion_menu ==1) {
+                System.out.println("Jugando");
+            }else if (opcion_menu ==2) {
+                System.out.println("Equipo reforzando");
+            }else if (opcion_menu ==3) {
+                System.out.println("Conectando online...");
+            }
+        } while(opcion_menu != 0);
+        //} while(!(opcion_menu == 0));
+        //terminara cuando sea 0 => opcion_menu==0
+        System.out.println("Juego terminado...");
         sc.close();
     }
 }
