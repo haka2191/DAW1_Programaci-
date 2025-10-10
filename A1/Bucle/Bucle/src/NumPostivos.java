@@ -14,7 +14,6 @@ public class NumPostivos {
             if (numero > 0) { //si es positivo se cuenta
                 contadorPositivos++;
             }
-            System.out.println("Numero: " + numero);
         } while (numero != 0);
         System.out.println(" Contador de numeros positivos -----> " + contadorPositivos);
         System.out.println("Has salido del programa.");
