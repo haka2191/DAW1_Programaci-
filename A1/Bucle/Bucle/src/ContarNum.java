@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex1 {
+public class ContarNum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Te pide un numero Ejemplo 5 te sale 0 a 5 
