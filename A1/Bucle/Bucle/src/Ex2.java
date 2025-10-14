@@ -8,7 +8,7 @@ public class Ex2 {
          * un contador y suma de 2 en 2.
          */
         Scanner sc = new Scanner(System.in);
-        int contador = 2;
+        int contador = 1;
         while (contador <= 200) { // mientras el contador sea menor o igual a 200
             System.out.println(contador);// muestra el valor del contador
             contador += 2;// suma 2 al contador
