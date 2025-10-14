@@ -12,7 +12,7 @@ public class Ex4conFor {
         int N = scanner.nextInt();
         //O si ponemos N = 50, mostrará del 1 al 50
         int contador;
-        for (contador = 1; contador <= N; contador++) {
+        for (contador = 1; contador <= N; ++contador) {
             System.out.println(contador);
         }
     }
