@@ -18,8 +18,10 @@ public class Ex11 {
             System.out.println("--->" + numeroAleatorio);
             if(numeroAleatorio % 2 == 0){
                 sumaPares += numeroAleatorio;
+                System.out.println("Es par");
             } else {
                 sumaImpares += numeroAleatorio;
+                System.out.println("Es impar");
             }
         }
         System.out.println("Suma Pares: " + sumaPares + " Suma Impares: " + sumaImpares);
