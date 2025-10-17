@@ -36,11 +36,12 @@ public class Ex13 {
             int limite_inferior = 1;
             int limite_superior = 100;
             int ordenador_piensa;
+            char respuesta;
             
             do{
                 ordenador_piensa= rd.nextInt(limite_inferior, limite_superior + 1);
                 System.out.println("He pensado el numero: " + ordenador_piensa + " he acertado (=,m(Menor),y(Meyor))?");
-                char respuesta = sc.next().charAt(0);
+                respuesta = sc.next().charAt(0);
                 if(respuesta == '='){
                     System.out.println("Has acertado");
                 }else if(respuesta == 'm'){
@@ -49,6 +50,6 @@ public class Ex13 {
                 }else{
                     System.out.println("Es mayor");
                 }
-            }while(true);
+            }while(respuesta != '=');
     }
 }
