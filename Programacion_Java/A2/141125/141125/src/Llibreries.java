@@ -1,5 +1,15 @@
 public class Llibreries {
     public static void main(String[] args) {
+        //pruebaMath();
+        int valor = PedirDatosUsuarios.PedirDatosPositivo("Pon dinero (positivo): ");
+        char seguir = PedirDatosUsuarios.pedirLetra("Pon una letra: ");
+        System.out.println(seguir);
+        int valorIntervalo = pedirDatosEntreIntervalo.pedirDatosEntreIntervalo(4, 12);
+
+
+
+    }
+    public static void pruebaMath(){
         //Llibreria Math
         double numeroPi= Math.PI;
         double calculo = numeroPi * 2;
