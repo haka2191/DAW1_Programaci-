@@ -13,6 +13,18 @@ public class Vaso {
         material = "Plástico";
     }
 
+    public Vaso(int capacidadVaso){
+        ml_capacidad = capacidadVaso;
+        ml_liquido = 0;
+        material = "Plástico";
+    }
+
+    public Vaso(String material){
+        this.ml_capacidad = 6;
+        this.ml_liquido = 0;
+        this.material = material;//this hace referencia al atributo del objeto
+    }
+
      public int getMlLiquido()
     {
         return ml_liquido;

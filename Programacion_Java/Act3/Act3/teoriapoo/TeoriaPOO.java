@@ -30,7 +30,7 @@ public class TeoriaPOO {
         System.out.println("ml liquido: " + bottle.getMlLiquido());
         
         Vaso glass1 = new Vaso();
-        Vaso glass2 = new Vaso();
+        Vaso glass2 = new Vaso(4);
         Vaso glass3 = new Vaso();
         Vaso glass4 = new Vaso();
         System.out.println("Llena la botella");
