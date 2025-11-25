@@ -38,6 +38,8 @@ public class TeoriaPOO {
 
         System.out.println("Empiezo a llenar vaosos con la botella" + bottle.getMlLiquido());
         while (!bottle.isVacia()) {
+            //Cambiar o añadir metodos a baso y botella
+            //para el liquido sobrnate al rellanar vuelva la botella
             //if (glass1.getMlLiquido()!=glass1.getCapacidad()) {
             if (!glass1.isLleno()) {
                 System.out.println("Rellenando vaso 1");
@@ -56,9 +58,6 @@ public class TeoriaPOO {
                 System.out.println("Rellenando vaso 4");
                 glass4.rellenar(bottle.verter());
                 System.out.println("A la botella le queda " + bottle.getMlLiquido());
-            } else {
-                System.out.println("Todos los vasos llenos");
-                break;
             }
         }
     }

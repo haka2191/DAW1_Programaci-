@@ -126,4 +126,10 @@ public class Botella {
             return false;
         }*/
     }
+
+
+    public void abrir() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'abrir'");
+    }
 }
