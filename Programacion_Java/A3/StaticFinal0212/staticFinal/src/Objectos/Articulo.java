@@ -1,9 +1,8 @@
 package Objectos;
-
-public class Artículo {
+public class Articulo {
     public String nombre;
     public double precio;
-    public double iva;
+    public static double iva=0.21;
     public int cuantosQuedan;
 
     //Añade un constructor con 4 parámetros que asigne valores a nombre, precio, iva y cuantosQuedan. 
@@ -12,7 +11,30 @@ public class Artículo {
     // Razónalo e implementa el código. Corrige el main y prueba a crear varios artículos. 
     // Introduce algunos con valores incorrectos para comprobar si avisa del error.
     
-    public Artículo(String nombre, double precio, double iva, int cuantosQuedan) {
+    public Articulo(String nombre, double precio, int cuantosQuedan) {
+        boolean error = false;
+        if (nombre == null || nombre.isEmpty()) {
+            System.out.println("Error: Nombre no válido.");
+            error = true;
+        }
+        if (precio < 0) {
+            System.out.println("Error: Precio no válido.");
+            error = true;
+        }
+        if (cuantosQuedan < 0) {
+            System.out.println("Error: Cantidad no válida.");
+            error = true;
+        }
+        if (!error) {
+            this.nombre = nombre;
+            this.precio = precio;
+            this.cuantosQuedan = cuantosQuedan;
+        }else{
+            this.nombre = "";
+        }
+    }
+    
+    public Articulo(String nombre, double precio, double iva, int cuantosQuedan) {
         boolean error = false;
         if (nombre == null || nombre.isEmpty()) {
             System.out.println("Error: Nombre no válido.");
